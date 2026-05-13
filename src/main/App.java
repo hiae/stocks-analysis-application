@@ -1,11 +1,13 @@
 package src.main;
 
+import src.main.components.InitiateApp;
+
 public class App {
 
     public static void main(String[] args) {
 
-        Program app = new Program();
-        app.startProgram();
+        InitiateApp app = new InitiateApp();
+        app.start();
     }
 
 }

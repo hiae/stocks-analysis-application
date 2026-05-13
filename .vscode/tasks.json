@@ -5,7 +5,7 @@
       "label": "Compile",
       "type": "shell",
       "command": "javac",
-      "args": ["-d", "build", "-sourcepath", "src/main", "src/main/*.java"],
+      "args": ["-d", "build", "-sourcepath", "src/main", "src/main/*.java", "src/main/components/*.java"],
       "group": "build",
       "problemMatcher": []
     },

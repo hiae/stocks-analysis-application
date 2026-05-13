@@ -1,36 +1,30 @@
-package src.main;
+package src.main.components;
 
 import javax.swing.JFrame;
-import javax.swing.SwingUtilities;
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Toolkit;
 
-public class Program {
+public class Frame {
 
-    boolean TRUE = true, FALSE = false;
-    int fontSize = 14;
-    String appLogoPath = "/src/main/resources/falogo2.png";
+    private boolean TRUE = true;
+    private String appLogoPath = "/src/main/resources/falogo2.png";
+   private String appTitle =  "Fundamental Analysis";
 
-    public void startProgram() {
+    public void programFrameLayout() {
 
-        SwingUtilities.invokeLater(() -> {
-            System.out.println(getClass().getResource("/"));
-            initiateProgram();
-        });
-
-    }
-
-    private void initiateProgram() {
         Image logo = Toolkit.getDefaultToolkit().getImage(getClass().getResource(appLogoPath));
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-
         JFrame appFrame = new JFrame();
-        appFrame.setTitle("Fundamental Analysis");
+
+        appFrame.setTitle(appTitle);
         appFrame.setIconImage(logo);
         appFrame.setSize(screenSize);
+        appFrame.setLayout(new BorderLayout());
         appFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         appFrame.setVisible(TRUE);
-    }
+        
 
+    }
 }
