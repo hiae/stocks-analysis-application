@@ -9,6 +9,9 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.io.File;
+import java.io.FileReader;
+import java.io.Reader;
 
 public class InitiateApp {
 
@@ -33,6 +36,8 @@ public class InitiateApp {
         Image logo = Toolkit.getDefaultToolkit().getImage(getClass().getResource(appLogoPath));
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         JFrame appFrame = new JFrame();
+        File stepOneInvestement = new File("src/main/resources/files/Macroeconoics-analysis.txt");
+        System.out.println("path here : " + stepOneInvestement.getAbsolutePath());
 
         appFrame.setTitle(appTitle);
         appFrame.setIconImage(logo);
@@ -45,8 +50,8 @@ public class InitiateApp {
         Container bodyContainer = new Container();
         Label usernameLabel = new Label("username");
         TextInputs usernameInput = new TextInputs(1);
-        Label passwordLabel = new Label("username");
-        TextInputs passwordInput = new TextInputs(1);
+        Label passwordLabel = new Label("password");
+        TextInputs passwordInput = new TextInputs(4);
 
         Button loginButton = new Button("Login");
         Button cancelButton = new Button("Cancel");

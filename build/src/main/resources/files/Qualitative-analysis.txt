@@ -1,0 +1,9 @@
+Step 3 — Company qualitative analysis (the moat)
+This is what Warren Buffett calls the economic moat — the durable competitive advantages that protect profits:
+
+Brand power (Apple, Coca-Cola can charge premiums)
+Switching costs (Salesforce customers don't leave easily)
+Network effects (Visa is more valuable with more users)
+Cost advantages (Walmart's scale, Amazon's logistics)
+Regulatory licenses (banks, utilities, broadcasters)
+Management quality — track record, capital allocation, skin in the game, integrity
